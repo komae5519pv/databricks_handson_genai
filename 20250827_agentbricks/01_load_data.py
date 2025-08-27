@@ -1,7 +1,7 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC # Githubのデータをダウンロード
-# MAGIC - ここではデモ用のサンプルデータをGithubからボリュームにロードします  
+# MAGIC ### Githubのデータをダウンロード
+# MAGIC - サンプルデータをGithubからボリュームにロードします  
 # MAGIC - サーバレス or DBR 16.0ML以降
 
 # COMMAND ----------
@@ -42,7 +42,7 @@ class DBDemos:
 DBDemos.download_file_from_git(
     dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/csv",
     owner="komae5519pv",
-    repo="komae_dbdemos",
+    repo="databricks_handson_genai",
     path="/20250827_agentbricks/_data/_csv/"
 )
 
@@ -50,7 +50,7 @@ DBDemos.download_file_from_git(
 DBDemos.download_file_from_git(
     dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/pdf",
     owner="komae5519pv",
-    repo="komae_dbdemos",
+    repo="databricks_handson_genai",
     path="/20250827_agentbricks/_data/_pdf/"
 )
 
@@ -58,6 +58,6 @@ DBDemos.download_file_from_git(
 DBDemos.download_file_from_git(
     dest=f"/Volumes/{MY_CATALOG}/{MY_SCHEMA}/{MY_VOLUME}/image",
     owner="komae5519pv",
-    repo="komae_dbdemos",
+    repo="databricks_handson_genai",
     path="/20250827_agentbricks/_data/_image/"
 )
